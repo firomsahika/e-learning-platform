@@ -97,13 +97,9 @@ const ReviewCard = ({
   );
 };
 
-const Category = () => {
+const SlidingCards = ({reviews}:{reviews: Array<{ img: string; name: string; username: string; body: string; course: number }>}) => {
   return (
-    <div className="font-poppins relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-14  ">
-      <div className="flex flex-col items-center justify-center pb-8 ">
-        <p className="text-3xl text-primary font-semibold">Category</p>
-        <p className="text-2xl text-primary">Top Category</p>
-      </div>
+    <div className="font-poppins relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-24 md:shadow-xl">
        
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
@@ -121,4 +117,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default SlidingCards;

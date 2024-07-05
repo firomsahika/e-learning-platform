@@ -41,7 +41,7 @@ const config = {
       },
 
       fontFamily: {
-        poppins: ['Raleway', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         primary: '#9158fa',
