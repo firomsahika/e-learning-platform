@@ -9,7 +9,7 @@ import ShinyBtn from "../../../components/ShinyBtn"
 
 const Hero = () => {
   return (
-    <div className='h-screen w-full  pt-20 px-10 flex items-center justify-center font-poppins relative  rounded-lg border  p-20  backdrop-blur-2xl'>
+    <div className='h-screen  w-full  pt-20 px-10 flex items-center justify-center font-poppins relative  rounded-lg border  p-20  backdrop-blur-2xl'>
    
         <div className='w-full flex  items-center justify-center gap-28  mx-auto'>
 

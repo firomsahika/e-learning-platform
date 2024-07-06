@@ -23,11 +23,11 @@ const WhyChooseUs = () => {
             }
         ];
         return (
-            <div className="w-full py-20 px-10 bg-white font-poppins">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-20 bg-white">
+            <div className=" w-full py-20 px-10  font-poppins">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-20 ">
                     {datas.map(({ title, icon, description }) => (
 
-                        <div key={title} className="flex gap-4 shadow-xl p-4 rounded-2xl bg-white">
+                        <div key={title} className="flex gap-4 shadow-xl p-4 rounded-2xl ">
                             
                             <div className="flex flex-col gap-3">
                                <div className="flex gap-2 items-center">

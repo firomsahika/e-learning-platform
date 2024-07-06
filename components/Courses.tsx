@@ -146,7 +146,7 @@ const ReviewCard = ({
 
 const Courses = () => {
   return (
-    <div className="font-poppins relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-24 ">
+    <div className=" font-poppins relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-24 ">
       <div className="flex flex-col items-center justify-center pb-8 ">
         <p className="text-3xl text-primary font-semibold">Courses</p>
         <p className="text-2xl text-primary">Popular Courses</p>
