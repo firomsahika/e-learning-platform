@@ -8,7 +8,7 @@ import {
   } from "@clerk/nextjs";
 
 import SelectDemo from "@/components/Select";
-import Search from "../../../components/Search"
+import Search from "./Search"
 
 
 export default function Header(){
