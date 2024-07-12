@@ -7,6 +7,7 @@ import {
     UserButton,
   } from "@clerk/nextjs";
 
+import Link from 'next/link'
 import SelectDemo from "@/components/Select";
 import Search from "./Search"
 
@@ -33,8 +34,8 @@ export default function Header(){
             {/* Signed out users get sign in button */}
             <SignInButton />
           </SignedOut>
-          <p className="text-primary">Teacher Mode</p>
-          <p className="text-primary">Dashboard</p>
+          <p className="text-primary cursor-pointer">Teacher Mode</p>
+          <Link href="/dashboard"><p className="text-primary cursor-pointer">Dashboard</p></Link>
           </div>
           
         </header>

@@ -1,3 +1,4 @@
+'use client'
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import Image from "next/image"
@@ -11,6 +12,7 @@ import { FaStar, FaRegStar } from 'react-icons/fa';
 import Rating from "../components/Rating"
 import { FiClock } from "react-icons/fi";
 import { CiUser } from "react-icons/ci";
+import { usePathname} from "next/navigation"
 
 
 const reviews = [
@@ -113,6 +115,9 @@ const ReviewCard = ({
   minute:number;
  
 }) => {
+  
+
+
   return (
     <figure
       className={cn(
@@ -145,13 +150,21 @@ const ReviewCard = ({
 };
 
 const Courses = () => {
+
+  
+  const pathname = usePathname();
+  
+  
+
   return (
     <div className=" font-poppins relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-24 ">
-      <div className="flex flex-col items-center justify-center pb-8 ">
-        <p className="text-3xl text-primary font-semibold">Courses</p>
-        <p className="text-2xl text-primary">Popular Courses</p>
-      </div>
-       
+     
+     
+      <div  className="flex flex-col items-center justify-center pb-8 ">
+      <p className="text-3xl text-primary font-semibold">Courses</p>
+      <p className="text-2xl text-primary">Popular Courses</p>
+     </div>
+   
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.title} {...review} />

@@ -11,7 +11,7 @@ import marketing from "../../../assets/marketing.jpg"
 import personaldev from "../../../assets/personaldev.jpg"
 import fitness from "../../../assets/fitness.jpg"
 import leadership from "../../../assets/leadership.jpg"
-
+import Courses from "../../../components/Courses"
 
 
 export default function Browse (){
@@ -47,6 +47,7 @@ export default function Browse (){
             icon:  <FcManager />,
             slug: "leadership"
         },
+        
     ]
     const courses = [
         {
@@ -109,8 +110,8 @@ export default function Browse (){
  
 
     return(
-        <div>
-           <div className="text-sm font-poppins p-3 flex items-center justify-center text-gray-500 gap-5">
+        <div className="pl-52 pt-14 ">
+           <div className="text-sm font-poppins p-3 flex items-center justify-center text-gray-500 gap-6 fixed bg-white z-20 w-full pr-52">
               {
                 categories.map(({name,icon,slug}) =>(
                     <div key={slug} className="flex text-sm gap-2 items-center justify-center rounded-3xl border p-2 hover:bg-gray-50 cursor-pointer">
@@ -120,7 +121,7 @@ export default function Browse (){
                 ))
               }
            </div>
-           <div>
+           <div className="grid grid-cols-4 gap-4 pt-20">
              {
                 courses.map(({title, chapter, category, rating, img}) =>(
                     <CoursesCard 
@@ -135,6 +136,7 @@ export default function Browse (){
                 ))
              }
            </div>
+           
         </div>
     )
 }
