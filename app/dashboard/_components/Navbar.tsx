@@ -1,4 +1,6 @@
 import Search from "@/components/Search"
+import {usePathname, useRouter} from "next/navigation";
+
 import {
     ClerkProvider,
     SignedIn,

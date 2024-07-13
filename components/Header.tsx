@@ -1,4 +1,6 @@
-
+"use client"
+import {useRouter} from "next/navigation"
+import {cn} from "@/lib/utils"
 import {
     ClerkProvider,
     SignedIn,
@@ -13,6 +15,10 @@ import Search from "./Search"
 
 
 export default function Header(){
+  const router = useRouter();
+  const onClick = ()=>{
+    router.push("/dashboard")
+  }
     return (
         <header className="font-poppins border-b-sm w-full backdrop-blur-3xl  flex items-center  justify-between px-10 ">
           <div className="flex items-center justify-center gap-6">
@@ -35,8 +41,20 @@ export default function Header(){
             <SignInButton />
           </SignedOut>
           <p className="text-primary cursor-pointer">Teacher Mode</p>
-          <Link href="/dashboard"><p className="text-primary cursor-pointer">Dashboard</p></Link>
+          
           </div>
+          <button
+          onClick={onClick}
+          type="button"
+          className={cn(
+            "text-primary cursor-pointer"
+          )
+
+          }
+          >
+          <p 
+          className="text-primary cursor-pointer">Dashboard</p>
+          </button>
           
         </header>
       );
