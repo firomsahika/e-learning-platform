@@ -17,10 +17,14 @@ const DashboardLayout = ({
         <Sidebar />
        </div>
         
-       <div className="flex flex-col w-full">
-        <Navbar />
-        {children}
+       
+        <div className="fixed w-full z-30 pl-56">
+          <Navbar />
         </div>
+        <main className="md:pl-56 h-full">
+        {children}
+        </main>
+ 
         {/* <Footer /> */}
     </div>
   )

@@ -5,16 +5,16 @@ import { FcSportsMode } from "react-icons/fc";
 import { FaPersonArrowUpFromLine } from "react-icons/fa6";
 import { FcManager } from "react-icons/fc";
 import CoursesCard from "@/components/CoursesCard";
-import programming from "../../../assets/programming.jpg"
-import business from "../../../assets/business.jpg"
-import marketing from "../../../assets/marketing.jpg"
-import personaldev from "../../../assets/personaldev.jpg"
-import fitness from "../../../assets/fitness.jpg"
-import leadership from "../../../assets/leadership.jpg"
-import Courses from "../../../components/Courses"
+import programming from "../../../../assets/programming.jpg"
+import business from "../../../../assets/business.jpg"
+import marketing from "../../../../assets/marketing.jpg"
+import personaldev from "../../../../assets/personaldev.jpg"
+import fitness from "../../../../assets/fitness.jpg"
+import leadership from "../../../../assets/leadership.jpg"
+import Courses from "../../../../components/Courses"
 
 
-export default function Browse (){
+export default function SearchPage (){
     const categories = [
         {
             name:"Programming",
@@ -110,11 +110,11 @@ export default function Browse (){
  
 
     return(
-        <div className="pl-52 pt-14 ">
-           <div className="text-sm font-poppins p-3 flex items-center justify-center text-gray-500 gap-6 fixed bg-white z-20 w-full pr-52">
+        <div className="pt-[4.5rem]">
+           <div className="text-sm font-poppins  p-4 flex items-center justify-center text-slate-500 gap-6 fixed  z-20 w-full pr-52 bg-white">
               {
                 categories.map(({name,icon,slug}) =>(
-                    <div key={slug} className="flex text-sm gap-2 items-center justify-center rounded-3xl border p-2 hover:bg-gray-50 cursor-pointer">
+                    <div key={slug} className=" flex text-sm gap-2 items-center justify-center rounded-3xl border p-2   hover:bg-gray-50 cursor-pointer bg-white  ">
                         {icon}
                         <p>{name}</p>
                     </div>

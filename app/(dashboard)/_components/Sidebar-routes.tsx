@@ -1,16 +1,17 @@
 import SidebarItem from "../_components/Sidebar-item"
 import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { TbBrandSafari } from "react-icons/tb";
+
 const guestRoutes = [
     {
         icon: <MdOutlineSpaceDashboard />,
-        label:"My Learning",
+        label:"Dashboard",
         href : "/dashboard"
     },
     {
         icon: <TbBrandSafari />,
         label:"Browse",
-        href : "/Search"
+        href : "/search"
     },
 
 ]
