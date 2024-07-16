@@ -18,10 +18,10 @@ const DashboardLayout = ({
        </div>
         
        
-        <div className="fixed w-full z-30 pl-56">
+        <div className=" fixed h-[80px] w-full z-30 pl-56">
           <Navbar />
         </div>
-        <main className="md:pl-56 h-full">
+        <main className=" md:pl-56 pt-[80px] h-full">
         {children}
         </main>
  

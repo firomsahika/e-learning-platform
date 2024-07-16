@@ -5,15 +5,16 @@ import { TbBrandSafari } from "react-icons/tb";
 import Link from "next/link";
 import {usePathname, useRouter} from 'next/navigation'
 import {cn} from "@/lib/utils";
+import {LucideIcon} from "lucide-react"
 
 interface sideBarProps{
-    icon: React.ReactNode,
+    icon: LucideIcon,
     href: string,
     label:string
 }
 
 const SidebarItem = ({
-    icon,
+    icon: Icon,
     href,
     label
 }: sideBarProps) => {
@@ -41,20 +42,13 @@ const SidebarItem = ({
             }
         >
             <div className="flex  items-center gap-x-2 py-4">
-            {React.isValidElement(icon) && React.cloneElement(icon, {
-                
-                    className: cn(
-                        "text-slate-500",
-                        isActive && "text-sky-700"
-                    )
-                }
-              )
-            }
+            <Icon 
+            size={25}
+            />
             
             {label}
 
-           
-
+    
             
             </div>
             <div className={cn("ml-auto opacity-0 border-2 border-sky-700 h-full transition-all ",
