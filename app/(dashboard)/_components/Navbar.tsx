@@ -14,7 +14,7 @@ import NavbarRoutes from "@/components/Navbar-routes"
 
 export default function Navbar(){
     return(
-      <div className=" p-4 border-b h-full flex items-center bg-white shadow-sm z-30">
+      <div className=" p-4 border-b h-full flex items-center bg-white shadow-sm z-30 ">
         <MobileSideBar />
         <NavbarRoutes />
 

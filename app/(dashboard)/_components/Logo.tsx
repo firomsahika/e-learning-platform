@@ -8,7 +8,7 @@ export default function Logo(){
           alt='logo'
           src="/logo.svg"
           />
-          <p className="text-primary">SkillsHorizon</p>
+          <p className="text-sky-600 text-sm">SkillsHorizon</p>
         </div>
     )
 }
